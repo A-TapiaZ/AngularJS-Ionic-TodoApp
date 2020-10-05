@@ -16,6 +16,8 @@ export class Tab1Page {
 
   async agregarLista(){
 
+
+    // Esto muestra el cajon cuando le doy a agregar tarea (el boton '+')
     const alert = await this.alertCtrl.create({
       header:'Nueva lista',
       inputs:[

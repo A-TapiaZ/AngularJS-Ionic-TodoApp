@@ -16,6 +16,7 @@ export class AddPage implements OnInit {
 
   constructor(private deseosService:DeseosService, private route:ActivatedRoute) {
     
+    // Esta linea permite leer los parametros de la url. 
     const listaID=this.route.snapshot.paramMap.get('ListaID');
     
     this.lista=this.deseosService.obtenerLista(listaID);
